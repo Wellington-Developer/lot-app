@@ -1,0 +1,108 @@
+.socialmedia-container {
+  padding: 12px 0;
+  background: #f5f7fa;
+}
+.socialmedia-container .socialmedia-content {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+}
+.socialmedia-container .socialmedia-content ul li a {
+  border-radius: 4px;
+  background: #e6eaf0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.socialmedia-container .socialmedia-content a:hover {
+  background: #ced3d9;
+}
+.socialmedia-container .socialmedia-content svg {
+  color: #333;
+}
+
+.container-header .content-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.container-header .content-header ul {
+  display: flex;
+  gap: 8px;
+}
+.container-header .content-header ul li a {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.3s;
+  color: #474d59;
+  font-weight: 500;
+}
+.container-header .content-header ul a:hover {
+  background: #f3f3f3;
+}
+
+.controller-menu {
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+.controller-menu svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .container-header .content-header {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-header .controller-menu {
+    display: block;
+  }
+  .container-header .content-header {
+    position: relative;
+  }
+  .container-header .content-header .menu-header.active {
+    display: block;
+    right: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+  }
+  .container-header .content-header .menu-header {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    border-radius: 10px 0 0 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+    background: #f5f7fa;
+  }
+  .container-header .content-header .menu-header ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .container-header .content-header .menu-header ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 12px 24px;
+  }
+  .container-header .content-header .menu-header ul:first-child {
+    border-radius: 10px 0 0 0;
+  }
+  .container-header .content-header .menu-header ul:last-child {
+    border-radius: 10px 0 0 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

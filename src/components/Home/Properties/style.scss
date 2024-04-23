@@ -1,0 +1,48 @@
+.properties-container {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  .properties-content {
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03rem;
+      color: #363b47;
+      font-weight: 500;
+    }
+
+    h1 {
+      color: #0b0c12;
+      span {
+        color: #23a6f0;
+        font-weight: 700;
+      }
+    }
+
+    .properties-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .properties-container {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    .properties-content {
+      p {
+        font-size: 12px;
+      }
+
+      h1 {
+        color: #0b0c12;
+        font-size: 1.5rem;
+      }
+
+      .properties-row {
+        overflow: auto;
+      }
+    }
+  }
+}

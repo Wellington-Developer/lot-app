@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.formhome-container {
+  height: 350px;
+}
+.formhome-container form {
+  margin-top: 140px;
+}
+.formhome-container form .select-home {
+  display: flex;
+}
+.formhome-container form .select-home :first-child {
+  border-radius: 10px 0 0 10px;
+}
+.formhome-container form .select-home :last-child {
+  border-radius: 0 10px 10px 0;
+}
+.formhome-container form .select-home select {
+  width: 100%;
+  border: 1px solid #fafafa;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.formhome-container form .select-home select::after {
+  content: "▼";
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 10px;
+  pointer-events: none;
+}
+.formhome-container form .select-home select:hover {
+  border-color: #f3f3f3;
+}
+.formhome-container form .select-home select:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .formhome-container {
+    height: 350px;
+  }
+  .formhome-container form {
+    margin-top: 60px;
+  }
+  .formhome-container form .select-home {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  }
+  .formhome-container form .select-home :first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .formhome-container form .select-home :last-child {
+    border-radius: 0 0 10px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
